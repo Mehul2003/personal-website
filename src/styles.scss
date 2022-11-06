@@ -6,10 +6,12 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-
 .dark-theme {
-    background-color: antiquewhite;
+    .page {
+        background-color: #637074;
+    }
     .header {
+        background-color: #284872;
         h1 {
             color: #FFFFFF;
         }
@@ -17,8 +19,31 @@ body {
             outline: #FFFFFF;
         }
     }
+    .footer {
+        background-color: #284872;
+        h1,h2 {
+            color: #FFFFFF;
+        }
+    }
 }
 
 .light-theme {
-
+    .page {
+        background-color: #FFFFFF;
+    }
+    .header {
+        background-color: #284872;
+        h1 {
+            color: #FFFFFF;
+        }
+        mat-button {
+            outline: #FFFFFF;
+        }
+    }
+    .footer {
+        background-color: #284872;
+        h1,h2 {
+            color: #FFFFFF;
+        }
+    }
 }

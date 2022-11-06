@@ -1,4 +1,4 @@
-<div class="row">
+<div class="header">
     <div class="col">
         <h1>Mehul Tailang </h1>
         <nav>
@@ -7,6 +7,6 @@
             <a mat-raised-button routerLink="projects">Projects</a>
             <a mat-raised-button routerLink="contact">Contact Me!</a>
         </nav>
-        <mat-slide-toggle [checked]="isChecked">Dark Mode</mat-slide-toggle>
+        <mat-slide-toggle [checked]="isChecked" (toggleChange)="changeTheme()">{{theme}}</mat-slide-toggle>
     </div>
-</div>
+</div>    
