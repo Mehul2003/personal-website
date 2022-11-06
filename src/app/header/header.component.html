@@ -2,9 +2,11 @@
     <div class="col">
         <h1>Mehul Tailang </h1>
         <nav>
-            <a mat-stroked-button routerLink="home">Home</a>
-            <a mat-stroked-button routerLink="">About Me</a>
-            <a mat-stroked-button routerLink="projects">Projects</a>
+            <a mat-raised-button routerLink="home">Home</a>
+            <a mat-raised-button routerLink="about">About Me</a>
+            <a mat-raised-button routerLink="projects">Projects</a>
+            <a mat-raised-button routerLink="contact">Contact Me!</a>
         </nav>
+        <mat-slide-toggle [checked]="isChecked">Dark Mode</mat-slide-toggle>
     </div>
 </div>

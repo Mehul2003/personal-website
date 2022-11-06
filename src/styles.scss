@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+.dark-theme {
+    background-color: antiquewhite;
+    .header {
+        h1 {
+            color: #FFFFFF;
+        }
+        mat-button {
+            outline: #FFFFFF;
+        }
+    }
+}
+
+.light-theme {
+
+}
