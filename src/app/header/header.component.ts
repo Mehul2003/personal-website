@@ -9,7 +9,7 @@ import { ThemeService } from '../theme.service';
 export class HeaderComponent implements OnInit {
 
   isChecked = true;
-  theme = "dark";
+  theme = "Dark";
 
 
   constructor(private themeService: ThemeService) { }
@@ -21,11 +21,11 @@ export class HeaderComponent implements OnInit {
     this.isChecked = !this.isChecked;
     if (this.isChecked) {
       this.themeService.changeTheme("dark-theme");
-      this.theme = "dark";
+      this.theme = "Dark";
     }
     else {
       this.themeService.changeTheme("light-theme");
-      this.theme = "light";
+      this.theme = "Light";
     }
   }
 

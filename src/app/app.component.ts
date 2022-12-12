@@ -7,7 +7,6 @@ import { ThemeService } from './theme.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'personal-website';
   theme: string = "dark-theme";
 
   constructor(private themeService: ThemeService) {

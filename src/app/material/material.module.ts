@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 
 
@@ -8,7 +10,9 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
   declarations: [],
   exports: [
     MatButtonModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
 })
 export class MaterialModule { }

@@ -20,7 +20,7 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'projects',
+    path: 'projects/:id',
     component: ProjectsComponent
   },
   {
