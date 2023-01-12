@@ -1,17 +1,15 @@
 <div class="header">
-    <div class="col">
-        <h1>Mehul Tailang </h1>
-        <nav>
-            <a mat-raised-button routerLink="home">Home</a>
-            <a mat-raised-button routerLink="about">About Me</a>
-            <a mat-raised-button data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" routerLink="projects/face-detection">Face Detection</a></li>
-                    <li><a class="dropdown-item" routerLink="projects/lane-auto">Lane Auto</a></li>
-                    <li><a class="dropdown-item" routerLink="projects/seefood">SeeFood</a></li>
-                </ul>
-            <a mat-raised-button routerLink="contact">Contact Me!</a>
-            <mat-slide-toggle [checked]="isChecked" (toggleChange)="changeTheme()">{{theme}}</mat-slide-toggle>
-        </nav>
-    </div>
+    <img src="../../favicon.ico" height="100px" width="100px">
+    <nav>
+        <a mat-raised-button routerLink="home">Home</a>
+        <a mat-raised-button routerLink="about">About Me</a>
+        <a mat-raised-button data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="projects/face-detection">Face Detection</a></li>
+                <li><a class="dropdown-item" routerLink="projects/lane-auto">Lane Auto</a></li>
+                <li><a class="dropdown-item" routerLink="projects/seefood">SeeFood</a></li>
+            </ul>
+        <a mat-raised-button routerLink="contact">Contact Me!</a>
+        <mat-slide-toggle [checked]="isChecked" (toggleChange)="changeTheme()">{{theme}}</mat-slide-toggle>
+    </nav>
 </div>    

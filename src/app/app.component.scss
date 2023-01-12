@@ -1,3 +1,21 @@
-.page {
-    height: 100%;
+.header {
+    min-width: 100%;
+    left: 0;
+}
+
+.footer {
+    min-width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.content-wrapper {
+    flex: 1;
+    min-width: 100%;
 }
