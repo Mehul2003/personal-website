@@ -3,13 +3,14 @@
 }
 
 img {
-    margin-left: 1%;
+    margin-left: 2%;
 }
 
+// pushes nav when switch toggled
 nav {
     display: flex;
     float: right;
-    margin-top: 1%;
+    margin-top: 30px;
     margin-right: 1%;
 }
 
@@ -20,7 +21,5 @@ a {
 }
 
 mat-slide-toggle {
-    color: antiquewhite;
+    align-self: center;
 }
-
-/* https://coolors.co/8693ab-bdd4e7-212227-637074-284872 */

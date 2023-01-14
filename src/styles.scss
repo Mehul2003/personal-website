@@ -1,49 +1,87 @@
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+h1 {
+    font-family: 'Montserrat', sans-serif; /* You can use any font you like */
+    font-size: 4rem; /* Adjust the font size to your preference */
+    font-weight: 600; /* Adjust the font weight to your preference */
+    letter-spacing: 0.1rem; /* Adjust the letter spacing to your preference */
+    text-transform: uppercase; /* Change the text to uppercase */
+    color: #0B3C5D; /* Adjust the color to your preference */
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif; /* You can use any font you like */
+    font-size: 2.5rem; /* Adjust the font size to your preference */
+    font-weight: 600; /* Adjust the font weight to your preference */
+    letter-spacing: 0.1rem; /* Adjust the letter spacing to your preference */
+    text-transform: uppercase; /* Change the text to uppercase */
+    color: #0077be; /* Adjust the color to your preference */
+  }
+
+  a, p {
+    font-family: 'Times New Roman', serif;
+  }
+  
+
+:root {
+    --prim1: #0B3C5D;
+    --back1: #2F3136;
+    --text1: #FFFFFF;
+    --prim2: #2c6688;
+    --back2: #c0bfbf;
+    --text2: #000000;
 }
 
-.dark-theme {
-    height: 80%;
+.dark-theme { 
     .content-wrapper {
-        height: 100%;
-        background-color: #637074;
+        background-color: var(--back1);
+        h1,h2,a,p {
+            color: var(--text1);
+        }
+        
     }
     .header {
-        background-color: #284872;
+        background-color: var(--prim1);
         h1 {
-            color: #FFFFFF;
+            color: var(--text1);
         }
         mat-button {
-            outline: #FFFFFF;
+            outline: var(--text1);
+        }
+        mat-slide-toggle {
+            color: var(--text1);
         }
     }
     .footer {
-        background-color: #284872;
+        background-color: var(--prim1);
         h1,h2 {
-            color: #FFFFFF;
+            color: var(--text1);
         }
     }
 }
 
 .light-theme {
     .content-wrapper {
-        height: 100%;
-        background-color: #FFFFFF;
+        background-color: var(--back2);
+        h1,h2,a,p {
+            color: var(--text2);
+        }
+        
     }
     .header {
-        background-color: #76a7e7;
+        background-color: var(--prim2);
         h1 {
-            color: #080808;
+            color: var(--text2);
         }
         mat-button {
-            outline: #080808;
+            outline: var(--text2);
+        }
+        mat-slide-toggle {
+            color: var(--text2);
         }
     }
     .footer {
-        background-color: #76a7e7;
+        background-color: var(--prim2);
         h1,h2 {
-            color: #080808;
+            color: var(--text2);
         }
     }
 }
