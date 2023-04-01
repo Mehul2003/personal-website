@@ -1,7 +1,17 @@
 .footer {
     position: relative;
 }
-// shifts when scroll bar is shown
+
 h1, h2 {
     text-align: center;
+}
+
+.top {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.bottom {
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
