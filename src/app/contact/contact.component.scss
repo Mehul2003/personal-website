@@ -1,12 +1,17 @@
-ul {
-    list-style: none;
-}
-
 mat-form-field {
-    color: black !important;
-    width: 200%;
+    color: white !important;
+    
+    width: 100%;
 }
 
 h1, h2 {
-    margin-left: 10%;
+    text-align: center;
+}
+
+button {
+    width: 50%;
+}
+
+.form-field {
+    text-align: center;
 }
