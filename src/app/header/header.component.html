@@ -10,6 +10,6 @@
                 <li><a class="dropdown-item" routerLink="projects/seefood">SeeFood</a></li>
             </ul>
         <a mat-raised-button routerLink="contact">Contact Me!</a>
-        <mat-slide-toggle [checked]="isChecked" (toggleChange)="changeTheme()">{{theme}}</mat-slide-toggle>
+        <mat-slide-toggle #darkModeSwitch [checked]="isChecked" (toggleChange)="changeTheme()"></mat-slide-toggle>
     </nav>
 </div>    
