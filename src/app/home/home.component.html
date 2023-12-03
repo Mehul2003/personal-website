@@ -1,5 +1,12 @@
 <div class="main">
+    <ng-particles
+        [id]="id"
+        [options]="options"
+        [particlesInit]="init"
+        (particlesLoaded)="particlesLoaded($event)"
+      ></ng-particles>
     <div class="position-absolute top-50 start-50 translate-middle">
         <h1>Mehul Tailang</h1>
+        <h2>Software Developer</h2>
     </div>
 </div>

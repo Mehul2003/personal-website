@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { SkillsComponent } from './skills/skills.component';
+import { NgParticlesModule } from 'ng-particles';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SkillsComponent } from './skills/skills.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    NgParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,35 +1,14 @@
-h1 {
-    font-family: 'Montserrat', sans-serif; /* You can use any font you like */
-    font-size: 4rem; /* Adjust the font size to your preference */
-    font-weight: 600; /* Adjust the font weight to your preference */
-    letter-spacing: 0.1rem; /* Adjust the letter spacing to your preference */
-    text-transform: uppercase; /* Change the text to uppercase */
-    color: #0B3C5D; /* Adjust the color to your preference */
-  }
-
-  h2 {
-    font-family: 'Montserrat', sans-serif; /* You can use any font you like */
-    font-size: 2.5rem; /* Adjust the font size to your preference */
-    font-weight: 600; /* Adjust the font weight to your preference */
-    letter-spacing: 0.1rem; /* Adjust the letter spacing to your preference */
-    text-transform: uppercase; /* Change the text to uppercase */
-    color: #0077be; /* Adjust the color to your preference */
-  }
-
-  a, p {
-    font-family: 'Times New Roman', serif;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 :root {
     // dark mode
-    --prim1: #0B3C5D;
-    --back1: #2F3136;
+    --prim1: #0B3C5D; // 2b2f4b
+    --back1: #0B3C5D; // 2b2f4b
     --text1: #FFFFFF;
 
     // light mode
     --prim2: #2c6688;
-    --back2: #c0bfbf;
+    --back2: #2c6688;
     --text2: #000000;
 }
 
