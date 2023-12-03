@@ -12,20 +12,11 @@ export class ProjectsComponent implements OnInit {
 
   projectName: string = "";
   projects: Project[] = [];
-  projectOrder = new Map([['face-detection', 0], ['lane-auto', 1], ['seefood', 2]]);
+  projectOrder = new Map([['face-blur', 0], ['seefood', 1]]);
   projectIndex = 0;
+
   
-  constructor(private route: ActivatedRoute, private router: Router, private projectService: ProjectService) { 
-    this.router.events.subscribe((event: Event) => {
-      if (event instanceof NavigationStart) {
-          // Show loading indicator
-      }
-      if (event instanceof NavigationEnd) {
-          // Hide loading indicator
-          this.projectName = String(this.route.snapshot.paramMap.get('id'));
-          this.projectIndex = <number>this.projectOrder.get(this.projectName);
-      }
-  });
+  constructor(private projectService: ProjectService) { 
   }
 
   ngOnInit(): void { 

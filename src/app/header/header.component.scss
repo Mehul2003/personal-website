@@ -4,6 +4,11 @@
 
 img {
     margin-left: 2%;
+    box-shadow: none;
+}
+
+img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 // pushes nav when switch toggled
