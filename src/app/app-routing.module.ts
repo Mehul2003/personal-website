@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'resume',
+    component: ResumeComponent
   }
 ];
 
