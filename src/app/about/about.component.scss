@@ -1,21 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .main {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-h1 {
-    text-align: center;
-    font-size: 40px;
+#intro .body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-td {
-    padding: 10%;
+#intro .left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
-p {
-    width: 80%;
+#intro .right img {
+    border: 5px solid transparent;
 }
 
-img {
-    border: 5px solid rgb(0, 0, 0);
+// h1 {
+//     text-align: center;
+//     font-size: 40px;
+// }
+
+
+// p {
+//     width: 100%;
+//     font-size: 2rem;
+//     line-height: normal;
+// }
+
+// a, p {
+//     font-family: 'Raleway', sans-serif;
+// }
+
+#intro .scroll {
+    position: absolute;
+    left: 50%;
+    transform: translate(0, -50%);
+    transition: all 0.5s;
 }
