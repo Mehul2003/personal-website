@@ -7,22 +7,130 @@ html {
     margin-right: 10%;
 }
 
-#intro .body {
+#intro {
     height: 100vh;
+}
+
+#intro .body {
     display: flex;
+    margin-top: 50px;
     align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
     justify-content: space-between;
     gap: 40px;
 }
 
 #intro .left {
     display: flex;
+    padding: 20px;
     flex-direction: column;
     align-items: start;
 }
 
+#intro .right {
+    border: 1px solid;
+}
+
 #intro .right img {
-    border: 5px solid transparent;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+}
+
+#intro .left .social-links {
+    font-size: 2rem;
+}
+
+#intro .scroll {
+    position: absolute;
+    margin-top: 10%;
+    left: 50%;
+    transform: translate(0, -50%);
+    transition: all 0.5s;
+}
+
+#intro .scroll::before {
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    animation: pulse 3s infinite;
+}
+
+#intro .scroll:hover {
+    opacity: 0.7;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0;
+    }
+    15%, 45% {
+        opacity: 1;
+    }
+    60% {
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+        opacity: 0;
+    }
+}
+
+#summary {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 100vh;
+}
+
+#summary .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 350px;
+    max-height: 400px;
+}
+
+#summary .card {
+    background-color: #2b2f4b;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#summary .card:hover {
+    border-color: #ffffff;
+    cursor: pointer;
+}
+
+#summary .card .info {
+    padding: 10px;
+    text-align: center;
+}
+
+#summary .card i {
+    font-size: 8rem;
+    color: #ffffff;
+}
+
+#journey {
+    height: 100vh;
+}
+
+#hobbies {
+    height: 100vh;
 }
 
 // h1 {
@@ -40,10 +148,3 @@ html {
 // a, p {
 //     font-family: 'Raleway', sans-serif;
 // }
-
-#intro .scroll {
-    position: absolute;
-    left: 50%;
-    transform: translate(0, -50%);
-    transition: all 0.5s;
-}

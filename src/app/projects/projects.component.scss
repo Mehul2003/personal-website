@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+.project-cards {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.project-cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 350px;
+}
+
 .card {
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -39,20 +55,4 @@
     color: #ccc;
     font-size: 1.1rem;
     line-height: 1.8rem;
-}
-
-.project-cards .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    min-width: 350px;
-}
-
-.project-cards {
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
 }
