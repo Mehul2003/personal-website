@@ -3,4 +3,5 @@ export interface Project {
     name: string;
     description: string;
     mediaPath: string;
+    githubPath: string;
 }

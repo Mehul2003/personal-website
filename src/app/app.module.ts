@@ -11,6 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { MaterialModule } from './material/material.module';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { SkillsComponent } from './skills/skills.component';
+import { NgParticlesModule } from 'ng-particles';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,16 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     FooterComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectDetailComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    NgParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

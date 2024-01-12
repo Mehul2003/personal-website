@@ -2,8 +2,25 @@
     height: 100%;
 }
 
-h1 {
+ng-particles {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+h1, h2 {
     text-align: center;
-    font-size: 50px;
-    color: rgb(255, 242, 242);
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
 }

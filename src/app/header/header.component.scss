@@ -4,6 +4,12 @@
 
 img {
     margin-left: 2%;
+    box-shadow: none;
+}
+
+img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
 }
 
 // pushes nav when switch toggled
@@ -17,7 +23,16 @@ nav {
 a {
     margin-right: 1%;
     width: 150px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0B3C5D;
+    opacity: 1;
     
+}
+
+a:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 mat-slide-toggle {

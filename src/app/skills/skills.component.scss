@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+.card {
+    background-color: #0B3C5D;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: #ffffff;
+    cursor: pointer;
+}
+
+section {
+    height: 100vh;
+}
+
+.title h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 5rem;
+    text-shadow: 2px 2px 5px black;
+    
+}
+
+#expertise .expertise-cards {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#expertise .card {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+#expertise .card:hover {
+    transform: rotateY(180deg);
+}
+
+#expertise .card .front, .back {
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+#expertise .card .front {
+    padding: 40px;
+    text-align: center;
+}
+
+#expertise .card .front i {
+    font-size: 10rem;
+    color: #ffffff;
+}
+
+#expertise .card .front h1 {
+    padding-top: 20px;
+    font-size: 2rem;
+}
+
+#expertise .card .back {
+    transform: rotateY(180deg);
+    padding: 10px;
+}
+
+#expertise .card .back h1 {
+    font-size: 2rem;
+}
+
+#expertise .card .back ul {
+    color: white;
+}
+
+
+#expertise .scroll {
+    position: absolute;
+    margin-top: 12vh;
+    left: 50%;
+    transform: translate(0, -50%);
+    transition: all 0.5s;
+}
+
+#expertise .scroll::before {
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    animation: pulse 3s infinite;
+}
+
+#expertise .scroll:hover {
+    opacity: 0.7;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0;
+    }
+    15%, 45% {
+        opacity: 1;
+    }
+    60% {
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+        opacity: 0;
+    }
+}
+
+
+.certificate-cards {
+    overflow: hidden;
+    padding: 15vh 0;
+    white-space: nowrap;
+}
+
+.certificate-cards .certificate-slide {
+    display: inline-flex;
+    animation: 45s slide infinite linear;
+}
+
+.certificate-cards .card {
+    margin: 0 40px;
+}
+
+.certificate-cards:hover .certificate-slide {
+    animation-play-state: paused;
+}
+
+.certificate-cards .card img {
+    width: 400px;
+    height: 283px;
+    border-radius: 20px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%)
+    }
+}
+
+#experience {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#experience .body {
+    padding: 15vh 0;
+}
+
+#experience .card {
+    padding: 50px;
+}
+
+#coursework {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#coursework .body {
+    padding: 15vh 0;
+}
+
+#coursework .card {
+    padding: 50px;
+}

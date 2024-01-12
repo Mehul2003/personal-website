@@ -1,21 +1,186 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .main {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-h1 {
+#intro {
+    height: 100vh;
+}
+
+#intro .body {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#intro .left {
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    align-items: start;
+}
+
+#intro .left h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
 }
 
-td {
-    padding: 10%;
+#intro .left p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.3rem;
 }
 
-p {
-    width: 80%;
+#intro .left a, p {
+    font-family: 'Raleway', sans-serif;
 }
 
-img {
-    border: 5px solid rgb(0, 0, 0);
+#intro .right {
+    
+}
+
+#intro .right img {
+    margin: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+}
+
+#intro .left .social-links {
+    font-size: 2rem;
+}
+
+.scroll {
+    position: absolute;
+    margin-top: 10%;
+    left: 50%;
+    transform: translate(0, -50%);
+    transition: all 0.5s;
+}
+
+.scroll::before {
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    animation: pulse 3s infinite;
+}
+
+.scroll:hover {
+    opacity: 0.7;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0;
+    }
+    15%, 45% {
+        opacity: 1;
+    }
+    60% {
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+        opacity: 0;
+    }
+}
+
+#summary {
+    padding: 50px;
+    padding-top: 100px;
+    height: 100vh;
+}
+
+#summary .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#summary .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 350px;
+    height: 400px;
+}
+
+#summary .card {
+    background-color: #0B3C5D;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#summary .card:hover {
+    border-color: #ffffff;
+    cursor: pointer;
+}
+
+#summary .card .info {
+    padding: 10px;
+    text-align: center;
+}
+
+#summary .card i {
+    font-size: 8rem;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+#summary .card h1 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+#summary .card h2 {
+    font-size: 2rem;
+}
+
+#journey {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#journey .card {
+    background-color: #0B3C5D;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    height: fit-content;
+    width: 80vw;
+}
+
+
+#journey .card h1 {
+    font-size: 3rem;
+}
+
+#journey .card p {
+    font-family: 'Raleway', sans-serif;
 }

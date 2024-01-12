@@ -4,15 +4,12 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
-  {
-    path: 'home',
     component: HomeComponent
   },
   {
@@ -20,8 +17,16 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'projects/:id',
+    path: 'projects',
     component: ProjectsComponent
+  },
+  {
+    path: 'projects/:id',
+    component: ProjectDetailComponent
+  },
+  {
+    path: 'skills',
+    component: SkillsComponent
   },
   {
     path: 'contact',
