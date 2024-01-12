@@ -16,8 +16,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex: 1;
-    min-width: 350px;
+    min-width: 400px;
+    max-width: 400px;
+    height: 400px;
 }
 
 .card {
@@ -27,7 +30,7 @@
     display: flex;
     gap: 30px;
     border: 1px solid transparent;
-    background-color: grey;
+    background-color: #0B3C5D;
     transition: all 0.3s ease;
 }
 
@@ -40,19 +43,18 @@
 .card .info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+    text-align: center;
 }
 
 .card .info h1 {
-    text-align: center;
-    margin-bottom: 20px;
     color: white;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 
-.card .info p {
-    color: #ccc;
-    font-size: 1.1rem;
-    line-height: 1.8rem;
+.card .info i {
+    color: white;
+    font-size: 10rem;
+    margin-bottom: 20px;
 }

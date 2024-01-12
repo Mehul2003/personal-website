@@ -23,17 +23,33 @@ html {
 
 #intro .left {
     display: flex;
-    padding: 20px;
+    margin-left: 30px;
     flex-direction: column;
     align-items: start;
 }
 
+#intro .left h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+#intro .left p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+#intro .left a, p {
+    font-family: 'Raleway', sans-serif;
+}
+
 #intro .right {
-    border: 1px solid;
+    
 }
 
 #intro .right img {
-    padding: 20px;
+    margin: 20px;
     border: 1px solid;
     border-radius: 20px;
     height: 400px;
@@ -44,7 +60,7 @@ html {
     font-size: 2rem;
 }
 
-#intro .scroll {
+.scroll {
     position: absolute;
     margin-top: 10%;
     left: 50%;
@@ -52,7 +68,7 @@ html {
     transition: all 0.5s;
 }
 
-#intro .scroll::before {
+.scroll::before {
     position: absolute;
     top: -16px;
     left: -16px;
@@ -65,7 +81,7 @@ html {
     animation: pulse 3s infinite;
 }
 
-#intro .scroll:hover {
+.scroll:hover {
     opacity: 0.7;
 }
 
@@ -84,24 +100,29 @@ html {
 
 #summary {
     padding: 50px;
+    padding-top: 100px;
+    height: 100vh;
+}
+
+#summary .card-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
-    height: 100vh;
 }
 
 #summary .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex: 1;
-    max-width: 350px;
-    max-height: 400px;
+    width: 350px;
+    height: 400px;
 }
 
 #summary .card {
-    background-color: #2b2f4b;
+    background-color: #0B3C5D;
     border-radius: 20px;
     display: flex;
     gap: 30px;
@@ -123,28 +144,43 @@ html {
 #summary .card i {
     font-size: 8rem;
     color: #ffffff;
+    padding-bottom: 20px;
+}
+
+#summary .card h1 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+#summary .card h2 {
+    font-size: 2rem;
 }
 
 #journey {
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#hobbies {
-    height: 100vh;
+#journey .card {
+    background-color: #0B3C5D;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    height: fit-content;
+    width: 80vw;
 }
 
-// h1 {
-//     text-align: center;
-//     font-size: 40px;
-// }
 
+#journey .card h1 {
+    font-size: 3rem;
+}
 
-// p {
-//     width: 100%;
-//     font-size: 2rem;
-//     line-height: normal;
-// }
-
-// a, p {
-//     font-family: 'Raleway', sans-serif;
-// }
+#journey .card p {
+    font-family: 'Raleway', sans-serif;
+}
