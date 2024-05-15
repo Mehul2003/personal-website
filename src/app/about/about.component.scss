@@ -3,12 +3,13 @@ html {
 }
 
 .main {
-    margin-left: 10%;
-    margin-right: 10%;
+    
 }
 
 #intro {
     height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #intro .body {
@@ -98,89 +99,65 @@ html {
     }
 }
 
-#summary {
-    padding: 50px;
-    padding-top: 100px;
-    height: 100vh;
-}
-
-#summary .card-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-#summary .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    width: 350px;
-    height: 400px;
-}
-
-#summary .card {
-    background-color: #0B3C5D;
-    border-radius: 20px;
-    display: flex;
-    gap: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
-}
-
-#summary .card:hover {
-    border-color: #ffffff;
-    cursor: pointer;
-}
-
-#summary .card .info {
-    padding: 10px;
+#journey .title h1 {
     text-align: center;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    font-size: 5rem;
+    text-shadow: 2px 2px 5px black;
 }
 
-#summary .card i {
-    font-size: 8rem;
+#journey .timeline {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
     color: #ffffff;
-    padding-bottom: 20px;
 }
 
-#summary .card h1 {
-    font-size: 3rem;
-    padding-bottom: 10px;
+#journey .tl-component {
+    margin: 0 20px 20px 20px;
 }
 
-#summary .card h2 {
-    font-size: 2rem;
+#journey .tl-section {
+    padding: 1.5em;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
 }
 
-#journey {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#journey .tl-date-right {
+    text-align: right;
 }
 
-#journey .card {
-    background-color: #0B3C5D;
-    padding: 50px;
-    border-radius: 20px;
-    display: flex;
-    gap: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
-    height: fit-content;
-    width: 80vw;
+#journey .tl-date-left {
+    text-align: left;
 }
 
-
-#journey .card h1 {
-    font-size: 3rem;
+#journey .tl-middle {
+    position: relative;
+    background: #ffffff;
 }
 
-#journey .card p {
-    font-family: 'Raleway', sans-serif;
+#journey .tl-point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
 }
+
+#journey .tl-component-title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+#journey .tl-component-text {
+    line-height: 1.5;
+}
+
